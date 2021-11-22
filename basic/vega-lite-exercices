@@ -1,0 +1,12 @@
+<div id="observablehq-Scatterplot-0f497fd3"></div>
+<div id="observablehq-BarChart-0f497fd3"></div>
+<p>Credit: <a href="https://observablehq.com/@gladsonre/vega-lite-api-exercicios">Vega-Lite Api - Exercícios by gladsonre</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@gladsonre/vega-lite-api-exercicios.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "Scatterplot") return new Inspector(document.querySelector("#observablehq-Scatterplot-0f497fd3"));
+  if (name === "BarChart") return new Inspector(document.querySelector("#observablehq-BarChart-0f497fd3"));
+});
+</script>
